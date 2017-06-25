@@ -1,0 +1,11 @@
+c:\users\asazs\documents\visual studio 2017\Projects\database\database\bin\Release\database.exe.config
+c:\users\asazs\documents\visual studio 2017\Projects\database\database\bin\Release\database.exe
+c:\users\asazs\documents\visual studio 2017\Projects\database\database\bin\Release\database.pdb
+c:\users\asazs\documents\visual studio 2017\Projects\database\database\obj\Release\database.Form2.resources
+c:\users\asazs\documents\visual studio 2017\Projects\database\database\obj\Release\database.Form1.resources
+c:\users\asazs\documents\visual studio 2017\Projects\database\database\obj\Release\database.Properties.Resources.resources
+c:\users\asazs\documents\visual studio 2017\Projects\database\database\obj\Release\database.csproj.GenerateResource.Cache
+c:\users\asazs\documents\visual studio 2017\Projects\database\database\obj\Release\database.exe
+c:\users\asazs\documents\visual studio 2017\Projects\database\database\obj\Release\database.pdb
+c:\users\asazs\documents\visual studio 2017\Projects\database\database\obj\Release\database.csprojResolveAssemblyReference.cache
+C:\Users\asazs\documents\visual studio 2017\Projects\database\database\obj\Release\database.LicenseActivate.resources
