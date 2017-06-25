@@ -35,11 +35,6 @@ namespace database
             }
             
         }     
-        
-        private void button1_Click(object sender, EventArgs e)
-        {
-           
-        }
         void Paste(string filepath)
         {
             var MyIni = new IniFile(filepath);

@@ -3,10 +3,13 @@ using System.Reflection;
 using System.Runtime.InteropServices;
 using System.Text;
 
-// Change this to match your program's normal namespace
+// YEEEEE https://stackoverflow.com
+/// <summary>
+///  ---- https://stackoverflow.com/questions/217902/reading-writing-an-ini-file
+/// </summary>
 namespace Ini1File
 {
-    class IniFile   // revision 11
+    class IniFile
     {
         string Path;
         string EXE = Assembly.GetExecutingAssembly().GetName().Name;
