@@ -428,7 +428,6 @@
             this.NickName.Name = "NickName";
             this.NickName.Size = new System.Drawing.Size(394, 20);
             this.NickName.TabIndex = 55;
-            this.NickName.TextChanged += new System.EventHandler(this.NickName_TextChanged);
             // 
             // label29
             // 

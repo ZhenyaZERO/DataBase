@@ -142,30 +142,5 @@ namespace database
 
             }
         }
-
-        private void panel1_MouseEnter(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void panel1_MouseDown(object sender, MouseEventArgs e)
-        {
-            
-        }
-
-        private void NickName_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void button1_Click_1(object sender, EventArgs e)
-        {
-         
-        }
-
-        private void button1_Click_2(object sender, EventArgs e)
-        {
-            
-        }
     }
 }

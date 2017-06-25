@@ -36,18 +36,6 @@ namespace database
             
         }     
         
-        
-
-
-        private string Crypt(string text)
-        {
-            string rtnStr = string.Empty;
-            foreach (char c in text) // Цикл, которым мы и криптуем "текст"
-            {
-                rtnStr += (char)((int)c ^ 3); //Число можно взять любое.
-            }
-            return rtnStr; //Возвращаем уже закриптованную строку.
-        }
         private void button1_Click(object sender, EventArgs e)
         {
            
@@ -62,7 +50,6 @@ namespace database
             Operator_.Text = MyIni.Read("Operator_");
             homeadres_.Text = MyIni.Read("homeadres_");
             sity_.Text = MyIni.Read("sity_");
-
             oby_.Text = MyIni.Read("oby_");
             class_oby_.Text = MyIni.Read("class_oby_");
             week_rod_.Text = MyIni.Read("week_rod_");
@@ -71,11 +58,8 @@ namespace database
 
             Rod_1_Pro.Text = MyIni.Read("Rod_1_Pro");
             Rod_2_Pro.Text = MyIni.Read("Rod_2_Pro");
-
-
             Rod_1.Text = MyIni.Read("Rod_1");
             Rod_2.Text = MyIni.Read("Rod_2");
-
             try
             {
                 pictureBox1.Load(MyIni.Read("img_pidorov"));
@@ -85,28 +69,7 @@ namespace database
             Form1 frm = new Form1();
             this.Text = "Досье: [" + Name_.Text + " " + lastname_.Text + " " + last_lst_.Text + " " + "]";
         }
-        private void button2_Click(object sender, EventArgs e)
-        {
-            var MyIni = new IniFile("pidor_pidorov00.dba");
-
-            MyIni.Write("week_rod_", "01.01.1970");
-            MyIni.Write("rod_sity_", "Пидороленд");
-            MyIni.Write("Name_", "Пидор");
-            MyIni.Write("lastname_", "Пидоров");
-            MyIni.Write("last_lst_", "Пидорович");
-            MyIni.Write("phone_", "+7 999 999-99-99");
-            MyIni.Write("Operator_", "Pidorovka Phone");
-            MyIni.Write("homeadres_", "Ул. Пидоровичка, 3");
-            MyIni.Write("sity_", "Пидоровка");
-            MyIni.Write("oby_", "Пидоровский Лицей");
-            MyIni.Write("class_oby_", "1 Б");
-            MyIni.Write("img_pidorov", "http://asazs.ru/doc/pidor.jpg");
-            MyIni.Write("class_oby_", "1 Б");
-            MyIni.Write("Rod_Names", "Мать: Пидорка Пидорова Подоровина; Отец: Пидор Пидоров Пидорович; ");
-            MyIni.Write("Rod_Dos", "Мать: pidorka_pidorova01.dbs; Отец: pidor_pidorov02.dbs;");
-            
-
-        }
+        
         private void Form1_Load(object sender, EventArgs e)
         {
 
