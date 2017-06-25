@@ -480,7 +480,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(654, 500);
+            this.label19.Location = new System.Drawing.Point(642, 437);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(105, 13);
             this.label19.TabIndex = 46;
@@ -567,7 +567,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(759, 517);
+            this.ClientSize = new System.Drawing.Size(759, 459);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.Rod_2_Pro);
             this.Controls.Add(this.Rod_1_Pro);

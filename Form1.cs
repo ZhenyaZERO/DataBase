@@ -68,7 +68,19 @@ namespace database
         
         private void Form1_Load(object sender, EventArgs e)
         {
+            if (GET("http://asazs.github.io/version.txt", "") != version_)
+            {
+                MessageBox.Show("Имеется обновленная версия");
+                WebClient webClient = new WebClient();
+                webClient.DownloadFile("http://asazs.ru/new_version.exe", GET("http://asazs.github.io/version.txt", "") + ".exe");
+                MessageBox.Show("Программа была обновлина, перезапустите ее из этой же папки");
+                Application.Exit();
 
+            }
+            else
+            {
+                MessageBox.Show("Программа не имеет обновлений на данный момент;");
+            }
         }
         private void Form1_Resize(object sender, EventArgs e)
         {
@@ -111,19 +123,7 @@ namespace database
         }
         private void проверитьОбновленияПрограммыToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            if (GET("http://asazs.ru/version1.txt", "") != version_)
-            {
-                MessageBox.Show("Имеется обновленная версия");
-                WebClient webClient = new WebClient();
-                webClient.DownloadFile("http://asazs.ru/new_version.exe", GET("http://asazs.ru/version1.txt", "") + ".exe");
-                MessageBox.Show("Программа была обновлина, перезапустите ее из этой же папки");
-                Application.Exit();
-
-            }
-            else
-            {
-                MessageBox.Show("Программа не имеет обновлений на данный момент;");
-            }
+           
         }
         
         private void редактироватьДосьеToolStripMenuItem_Click(object sender, EventArgs e)

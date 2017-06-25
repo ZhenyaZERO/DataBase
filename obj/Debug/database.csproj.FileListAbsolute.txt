@@ -8,3 +8,13 @@ c:\users\asazs\documents\visual studio 2017\Projects\database\database\obj\Debug
 c:\users\asazs\documents\visual studio 2017\Projects\database\database\obj\Debug\database.pdb
 c:\users\asazs\documents\visual studio 2017\Projects\database\database\obj\Debug\database.Form1.resources
 c:\users\asazs\documents\visual studio 2017\Projects\database\database\obj\Debug\database.Form2.resources
+E:\dtd\DataBase\bin\Debug\database.exe.config
+E:\dtd\DataBase\bin\Debug\database.exe
+E:\dtd\DataBase\bin\Debug\database.pdb
+E:\dtd\DataBase\obj\Debug\database.csprojResolveAssemblyReference.cache
+E:\dtd\DataBase\obj\Debug\database.Form2.resources
+E:\dtd\DataBase\obj\Debug\database.Form1.resources
+E:\dtd\DataBase\obj\Debug\database.Properties.Resources.resources
+E:\dtd\DataBase\obj\Debug\database.csproj.GenerateResource.Cache
+E:\dtd\DataBase\obj\Debug\database.exe
+E:\dtd\DataBase\obj\Debug\database.pdb
