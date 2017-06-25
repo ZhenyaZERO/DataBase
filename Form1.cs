@@ -30,7 +30,9 @@ namespace database
             }
             catch (Exception ex)
             {
-                MessageBox.Show("Connect to Internet. (pictureBox image not loaded)");
+                MessageBox.Show("Ошибка программы. обратитесь к asazs, asazs.ru -> Projects -> Database -> feedback. и отправьте скриншот и что вы делали после чего появилась данная ошибка." + Environment.NewLine + ": " + ex.Message);
+
+                Environment.Exit(0);
             }
             
         }     
@@ -88,13 +90,24 @@ namespace database
         }
         private string GET(string Url, string Data)
         {
-            WebRequest req = WebRequest.Create(Url + "?" + Data);
-            WebResponse resp = req.GetResponse();
-            Stream stream = resp.GetResponseStream();
-            StreamReader sr = new StreamReader(stream);
-            string Out = sr.ReadToEnd();
-            sr.Close();
-            return Out;
+            try
+            {
+                WebRequest req = WebRequest.Create(Url + "?" + Data);
+                WebResponse resp = req.GetResponse();
+                Stream stream = resp.GetResponseStream();
+                StreamReader sr = new StreamReader(stream);
+                string Out = sr.ReadToEnd();
+                sr.Close();
+                return Out;
+            }
+            catch (Exception e)
+            {
+                MessageBox.Show("Ошибка программы. обратитесь к asazs, asazs.ru -> Projects -> Database -> feedback. и отправьте скриншот и что вы делали после чего появилась данная ошибка." + Environment.NewLine + ": " + e.Message);
+                Environment.Exit(0);
+                return "";
+
+            }
+            
         }
         private void проверитьОбновленияПрограммыToolStripMenuItem_Click(object sender, EventArgs e)
         {

@@ -33,29 +33,38 @@ namespace database
         }
         void Paste(string filepath1)
         {
-            var MyIni = new IniFile(filepath1);
-            MyIni.Write("Name_", Name_.Text);
-            MyIni.Write("lastname_", lastname_.Text);
-            MyIni.Write("last_lst_", last_lst_.Text);
-            MyIni.Write("phone_", phone_.Text);
-            MyIni.Write("Operator_", Operator_.Text);
-            MyIni.Write("homeadres_", homeadres_.Text);
-            MyIni.Write("sity_", sity_.Text);
-            MyIni.Write("oby_", oby_.Text);
-            MyIni.Write("class_oby_", class_oby_.Text);
-            MyIni.Write("NickName", NickName.Text);
-            MyIni.Write("week_rod_", dateTimePicker1.Text);
-            MyIni.Write("rod_sity_", rod_sity_.Text);
-            //MyIni.Write("Rod_Dos", Rod_Dos.Text);
-            //MyIni.Write("Rod_Names", Rod_Names.Text);
-            MyIni.Write("Rod_1_Pro", Rod_1_Pro.Text);
-            MyIni.Write("Rod_2_Pro", Rod_2_Pro.Text);
-            MyIni.Write("Rod_1", Rod_1.Text);
-            MyIni.Write("Rod_2", Rod_2.Text);
+            try
+            {
+                var MyIni = new IniFile(filepath1);
+                MyIni.Write("Name_", Name_.Text);
+                MyIni.Write("lastname_", lastname_.Text);
+                MyIni.Write("last_lst_", last_lst_.Text);
+                MyIni.Write("phone_", phone_.Text);
+                MyIni.Write("Operator_", Operator_.Text);
+                MyIni.Write("homeadres_", homeadres_.Text);
+                MyIni.Write("sity_", sity_.Text);
+                MyIni.Write("oby_", oby_.Text);
+                MyIni.Write("class_oby_", class_oby_.Text);
+                MyIni.Write("NickName", NickName.Text);
+                MyIni.Write("week_rod_", dateTimePicker1.Text);
+                MyIni.Write("rod_sity_", rod_sity_.Text);
+                //MyIni.Write("Rod_Dos", Rod_Dos.Text);
+                //MyIni.Write("Rod_Names", Rod_Names.Text);
+                MyIni.Write("Rod_1_Pro", Rod_1_Pro.Text);
+                MyIni.Write("Rod_2_Pro", Rod_2_Pro.Text);
+                MyIni.Write("Rod_1", Rod_1.Text);
+                MyIni.Write("Rod_2", Rod_2.Text);
 
 
-            MyIni.Write("img_pidorov", textBox2.Text);
-            MessageBox.Show("Saved to "+filepath1);
+                MyIni.Write("img_pidorov", textBox2.Text);
+                MessageBox.Show("Saved to " + filepath1);
+            }
+            catch(Exception e)
+            {
+                MessageBox.Show("Ошибка программы. обратитесь к asazs, asazs.ru -> Projects -> Database -> feedback. и отправьте скриншот и что вы делали после чего появилась данная ошибка." + Environment.NewLine + ": " + e.Message);
+                Environment.Exit(0);
+            }
+            
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -95,25 +104,33 @@ namespace database
         }
         void Paste1(string filename)
         {
-            var MyIni = new IniFile(filename);
-            Name_.Text = MyIni.Read("Name_");
-            lastname_.Text = MyIni.Read("lastname_");
-            last_lst_.Text = MyIni.Read("last_lst_");
-            phone_.Text = MyIni.Read("phone_");
-            Operator_.Text = MyIni.Read("Operator_");
-            homeadres_.Text = MyIni.Read("homeadres_");
-            sity_.Text = MyIni.Read("sity_");
-            oby_.Text = MyIni.Read("oby_");
-            NickName.Text = MyIni.Read("NickName");
-            class_oby_.Text = MyIni.Read("class_oby_");
-            dateTimePicker1.Text = MyIni.Read("week_rod_");
-            rod_sity_.Text = MyIni.Read("rod_sity_");
-            Rod_1_Pro.Text = MyIni.Read("Rod_1_Pro");
-            Rod_2_Pro.Text = MyIni.Read("Rod_2_Pro");
-            Rod_1.Text = MyIni.Read("Rod_1");
-            Rod_2.Text = MyIni.Read("Rod_2");
-            textBox2.Text = MyIni.Read("img_pidorov");
-            
+            try
+            {
+
+                var MyIni = new IniFile(filename);
+                Name_.Text = MyIni.Read("Name_");
+                lastname_.Text = MyIni.Read("lastname_");
+                last_lst_.Text = MyIni.Read("last_lst_");
+                phone_.Text = MyIni.Read("phone_");
+                Operator_.Text = MyIni.Read("Operator_");
+                homeadres_.Text = MyIni.Read("homeadres_");
+                sity_.Text = MyIni.Read("sity_");
+                oby_.Text = MyIni.Read("oby_");
+                NickName.Text = MyIni.Read("NickName");
+                class_oby_.Text = MyIni.Read("class_oby_");
+                dateTimePicker1.Text = MyIni.Read("week_rod_");
+                rod_sity_.Text = MyIni.Read("rod_sity_");
+                Rod_1_Pro.Text = MyIni.Read("Rod_1_Pro");
+                Rod_2_Pro.Text = MyIni.Read("Rod_2_Pro");
+                Rod_1.Text = MyIni.Read("Rod_1");
+                Rod_2.Text = MyIni.Read("Rod_2");
+                textBox2.Text = MyIni.Read("img_pidorov");
+
+            } catch (Exception e)
+            {
+                MessageBox.Show("Ошибка программы. обратитесь к asazs, asazs.ru -> Projects -> Database -> feedback. и отправьте скриншот и что вы делали после чего появилась данная ошибка." + Environment.NewLine + ": " + e.Message);
+                Environment.Exit(0);
+            }
         }
 
         private void button5_Click(object sender, EventArgs e)
