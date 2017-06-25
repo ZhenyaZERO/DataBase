@@ -19,8 +19,7 @@ namespace database
     
     public partial class Form1 : Form
     {
-        CookieContainer cookies = new CookieContainer();
-        public string version_ = "1.8";
+        public string version_ = "1.8"; 
         public static string hwid_bleat = "";
         public Form1()
         {

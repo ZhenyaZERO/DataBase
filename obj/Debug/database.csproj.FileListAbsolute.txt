@@ -8,4 +8,3 @@ c:\users\asazs\documents\visual studio 2017\Projects\database\database\obj\Debug
 c:\users\asazs\documents\visual studio 2017\Projects\database\database\obj\Debug\database.pdb
 c:\users\asazs\documents\visual studio 2017\Projects\database\database\obj\Debug\database.Form1.resources
 c:\users\asazs\documents\visual studio 2017\Projects\database\database\obj\Debug\database.Form2.resources
-C:\Users\asazs\documents\visual studio 2017\Projects\database\database\obj\Debug\database.LicenseActivate.resources
