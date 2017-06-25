@@ -10,10 +10,7 @@ using System.Windows.Forms;
 using Ini1File;
 namespace database
 {
-    // :) Nice .Net Reflector))))
-    // :) Nice .Net Reflector))))
-    // :) Nice .Net Reflector))))
-    // :) Nice .Net Reflector))))
+    // :) hello github
 
 
 

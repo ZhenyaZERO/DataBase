@@ -14,9 +14,7 @@ using System.Management;
 
 namespace database
 {
-    // :) Nice .Net Reflector))))
-    // :) Nice .Net Reflector))))
-    // :) Nice .Net Reflector))))
+    // :) hello github
 
     
     public partial class Form1 : Form
