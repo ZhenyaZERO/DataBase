@@ -20,15 +20,11 @@ namespace database
     public partial class Form1 : Form
     {
         CookieContainer cookies = new CookieContainer();
-        public string version_ = "1.7";
+        public string version_ = "1.8";
         public static string hwid_bleat = "";
         public Form1()
         {
             InitializeComponent();
-            
-            panel1.AllowDrop = true;
-            panel1.DragEnter += new DragEventHandler(oby__DragEnter);
-            panel1.DragDrop += new DragEventHandler(oby__DragDrop);
             try
             {
                 pictureBox1.Load("http://asazs.ru/doc/no-photo-big.gif");
@@ -39,16 +35,7 @@ namespace database
             }
             
         }     
-        public void hwid_set()
-        {
-            string drive = Environment.GetFolderPath(Environment.SpecialFolder.System).Substring(0, 1);
-            ManagementObject disk = new ManagementObject("win32_logicaldisk.deviceid=\"" + drive + ":\"");
-            disk.Get();
-            string diskLetter = (disk["VolumeSerialNumber"].ToString());
-            string lol1 = (Crypt(diskLetter.ToString()));
-            
-            toolStripStatusLabel1.Text = "Лицензия: " + lol1 + " UserName: " + Environment.UserName;
-        }
+        
         
 
 
@@ -122,24 +109,11 @@ namespace database
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-            hwid_set();
-
-        }
-        private void label19_Click(object sender, EventArgs e)
-        {
 
         }
         private void Form1_Resize(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Normal;
-        }
-        private void button3_Click(object sender, EventArgs e)
-        {
-            
-        }
-        private void button4_Click(object sender, EventArgs e)
-        {
-            
         }
         private void создатьДосьеToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -155,34 +129,6 @@ namespace database
                 Paste(openFileDialog1.FileName);
             }
         }
-        private void oby__DragEnter(object sender, DragEventArgs e)
-        {
-            if (e.Data.GetDataPresent(DataFormats.FileDrop) &&
-                ((e.AllowedEffect & DragDropEffects.Move) == DragDropEffects.Move))
-
-                e.Effect = DragDropEffects.Move;
-        }
-        private void oby__DragDrop(object sender, DragEventArgs e)
-        {
-            if (e.Data.GetDataPresent(DataFormats.FileDrop) && e.Effect == DragDropEffects.Move)
-            {
-                string[] objects = (string[])e.Data.GetData(DataFormats.FileDrop);
-                
-                for (int i = 0; i < objects.Length; i++)
-                {
-                    if (string.Equals(Path.GetExtension(objects[i]), ".dba", StringComparison.InvariantCultureIgnoreCase))
-                    {
-                        Paste(objects[i]);
-                    }
-                    else
-                    {
-                        MessageBox.Show("Формат данного файла не поддерживается");
-                    }
-                }
-                    
-                
-            }
-        }
         private string GET(string Url, string Data)
         {
             WebRequest req = WebRequest.Create(Url + "?" + Data);
@@ -192,26 +138,6 @@ namespace database
             string Out = sr.ReadToEnd();
             sr.Close();
             return Out;
-        }
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-        private void label26_Click(object sender, EventArgs e)
-        {
-
-        }
-        private void Form1_DragLeave(object sender, EventArgs e)
-        {
-
-        }
-        private void Form1_MouseEnter(object sender, EventArgs e)
-        {
-
-        }
-        private void Form1_MouseDown(object sender, MouseEventArgs e)
-        {
-
         }
         private void проверитьОбновленияПрограммыToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -229,10 +155,7 @@ namespace database
                 MessageBox.Show("Программа не имеет обновлений на данный момент;");
             }
         }
-        private void файлToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
+        
         private void редактироватьДосьеToolStripMenuItem_Click(object sender, EventArgs e)
         {
             openFileDialog1.Filter = "dba files (*.dba)|*.dba";
@@ -243,18 +166,10 @@ namespace database
                 Form2ftm.Show();
             }
         }
-        private void версия15ToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
+        
         private void оПрограммеToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Создатель программы: Asazs; Спасибо Команде SecErr за помощь в написании программы");
-        }
-
-        private void toolStripStatusLabel1_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

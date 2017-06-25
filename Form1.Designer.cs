@@ -75,8 +75,6 @@
             this.оПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.проверитьОбновленияПрограммыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label19 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label26 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.NickName = new System.Windows.Forms.TextBox();
             this.label28 = new System.Windows.Forms.Label();
@@ -86,12 +84,8 @@
             this.Rod_2_Pro = new System.Windows.Forms.TextBox();
             this.Rod_1_Pro = new System.Windows.Forms.TextBox();
             this.label22 = new System.Windows.Forms.Label();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Name_
@@ -276,8 +270,6 @@
             this.oby_.ReadOnly = true;
             this.oby_.Size = new System.Drawing.Size(314, 20);
             this.oby_.TabIndex = 18;
-            this.oby_.DragDrop += new System.Windows.Forms.DragEventHandler(this.oby__DragDrop);
-            this.oby_.DragEnter += new System.Windows.Forms.DragEventHandler(this.oby__DragEnter);
             // 
             // label15
             // 
@@ -439,7 +431,6 @@
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
             this.файлToolStripMenuItem.Size = new System.Drawing.Size(48, 20);
             this.файлToolStripMenuItem.Text = "Файл";
-            this.файлToolStripMenuItem.Click += new System.EventHandler(this.файлToolStripMenuItem_Click);
             // 
             // открытьДосьеToolStripMenuItem
             // 
@@ -494,28 +485,6 @@
             this.label19.Size = new System.Drawing.Size(105, 13);
             this.label19.TabIndex = 46;
             this.label19.Text = "SecErr (c) - By asazs";
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.panel1.Controls.Add(this.label26);
-            this.panel1.Location = new System.Drawing.Point(635, 333);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(121, 106);
-            this.panel1.TabIndex = 47;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
-            // 
-            // label26
-            // 
-            this.label26.AutoSize = true;
-            this.label26.BackColor = System.Drawing.Color.Transparent;
-            this.label26.ForeColor = System.Drawing.Color.DimGray;
-            this.label26.Location = new System.Drawing.Point(13, 32);
-            this.label26.Name = "label26";
-            this.label26.Size = new System.Drawing.Size(103, 39);
-            this.label26.TabIndex = 48;
-            this.label26.Text = "Перетащите Сюда \r\nдосье чтобы \r\nего открыть";
-            this.label26.Click += new System.EventHandler(this.label26_Click);
             // 
             // label27
             // 
@@ -594,29 +563,11 @@
             this.label22.TabIndex = 74;
             this.label22.Text = "Телефон и Оператор";
             // 
-            // statusStrip1
-            // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 495);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(759, 22);
-            this.statusStrip1.TabIndex = 75;
-            this.statusStrip1.Text = "statusStrip1";
-            // 
-            // toolStripStatusLabel1
-            // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(118, 17);
-            this.toolStripStatusLabel1.Text = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Click += new System.EventHandler(this.toolStripStatusLabel1_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(759, 517);
-            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.Rod_2_Pro);
             this.Controls.Add(this.Rod_1_Pro);
@@ -626,7 +577,6 @@
             this.Controls.Add(this.label27);
             this.Controls.Add(this.NickName);
             this.Controls.Add(this.label28);
-            this.Controls.Add(this.panel1);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.label21);
             this.Controls.Add(this.label24);
@@ -669,17 +619,10 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.DragLeave += new System.EventHandler(this.Form1_DragLeave);
-            this.MouseDown += new System.Windows.Forms.MouseEventHandler(this.Form1_MouseDown);
-            this.MouseEnter += new System.EventHandler(this.Form1_MouseEnter);
             this.Resize += new System.EventHandler(this.Form1_Resize);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
-            this.statusStrip1.ResumeLayout(false);
-            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -729,8 +672,6 @@
         private System.Windows.Forms.ToolStripMenuItem создатьДосьеToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem открытьДосьеToolStripMenuItem;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label26;
         private System.Windows.Forms.ToolStripMenuItem проверитьОбновленияПрограммыToolStripMenuItem;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.TextBox NickName;
@@ -745,8 +686,6 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
         private System.Windows.Forms.ToolStripMenuItem оПрограммеToolStripMenuItem;
-        private System.Windows.Forms.StatusStrip statusStrip1;
-        private System.Windows.Forms.ToolStripStatusLabel toolStripStatusLabel1;
     }
 }
 
