@@ -51,7 +51,6 @@ namespace database
             week_rod_.Text = MyIni.Read("week_rod_");
             rod_sity_.Text = MyIni.Read("rod_sity_");
             NickName.Text = MyIni.Read("NickName");
-
             Rod_1_Pro.Text = MyIni.Read("Rod_1_Pro");
             Rod_2_Pro.Text = MyIni.Read("Rod_2_Pro");
             Rod_1.Text = MyIni.Read("Rod_1");
