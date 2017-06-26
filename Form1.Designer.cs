@@ -87,6 +87,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.Propiska_ = new System.Windows.Forms.TextBox();
             this.label26 = new System.Windows.Forms.Label();
+            this.info_avt = new System.Windows.Forms.TextBox();
+            this.label33 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
@@ -355,9 +357,9 @@
             this.text1.AutoSize = true;
             this.text1.Location = new System.Drawing.Point(15, 210);
             this.text1.Name = "text1";
-            this.text1.Size = new System.Drawing.Size(91, 13);
+            this.text1.Size = new System.Drawing.Size(93, 13);
             this.text1.TabIndex = 33;
-            this.text1.Text = "Город Рождения";
+            this.text1.Text = "Место Рождения";
             // 
             // rod_sity_
             // 
@@ -483,7 +485,7 @@
             // label19
             // 
             this.label19.AutoSize = true;
-            this.label19.Location = new System.Drawing.Point(642, 373);
+            this.label19.Location = new System.Drawing.Point(15, 563);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(105, 13);
             this.label19.TabIndex = 46;
@@ -592,11 +594,31 @@
             this.label26.TabIndex = 75;
             this.label26.Text = "Адрес прописки";
             // 
+            // info_avt
+            // 
+            this.info_avt.Location = new System.Drawing.Point(456, 347);
+            this.info_avt.Name = "info_avt";
+            this.info_avt.ReadOnly = true;
+            this.info_avt.Size = new System.Drawing.Size(291, 20);
+            this.info_avt.TabIndex = 85;
+            this.info_avt.Text = " ";
+            // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Location = new System.Drawing.Point(453, 330);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(207, 13);
+            this.label33.TabIndex = 84;
+            this.label33.Text = "Немного информации от автора досье:";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(759, 532);
+            this.ClientSize = new System.Drawing.Size(759, 585);
+            this.Controls.Add(this.info_avt);
+            this.Controls.Add(this.label33);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.Propiska_);
             this.Controls.Add(this.label26);
@@ -721,6 +743,8 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox Propiska_;
         private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.TextBox info_avt;
+        private System.Windows.Forms.Label label33;
     }
 }
 

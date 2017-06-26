@@ -85,6 +85,8 @@
             this.label31 = new System.Windows.Forms.Label();
             this.Propiska_ = new System.Windows.Forms.TextBox();
             this.label32 = new System.Windows.Forms.Label();
+            this.label33 = new System.Windows.Forms.Label();
+            this.info_avt = new System.Windows.Forms.TextBox();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -336,9 +338,9 @@
             this.text1.AutoSize = true;
             this.text1.Location = new System.Drawing.Point(16, 222);
             this.text1.Name = "text1";
-            this.text1.Size = new System.Drawing.Size(91, 13);
+            this.text1.Size = new System.Drawing.Size(93, 13);
             this.text1.TabIndex = 33;
-            this.text1.Text = "Город Рождения";
+            this.text1.Text = "Место Рождения";
             // 
             // rod_sity_
             // 
@@ -359,7 +361,7 @@
             // label26
             // 
             this.label26.AutoSize = true;
-            this.label26.Location = new System.Drawing.Point(143, 490);
+            this.label26.Location = new System.Drawing.Point(212, 504);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(10, 13);
             this.label26.TabIndex = 46;
@@ -368,7 +370,7 @@
             // label27
             // 
             this.label27.AutoSize = true;
-            this.label27.Location = new System.Drawing.Point(15, 490);
+            this.label27.Location = new System.Drawing.Point(15, 504);
             this.label27.Name = "label27";
             this.label27.Size = new System.Drawing.Size(122, 13);
             this.label27.TabIndex = 45;
@@ -376,9 +378,9 @@
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(150, 487);
+            this.textBox2.Location = new System.Drawing.Point(228, 501);
             this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(384, 20);
+            this.textBox2.Size = new System.Drawing.Size(306, 20);
             this.textBox2.TabIndex = 44;
             // 
             // menuStrip1
@@ -387,7 +389,7 @@
             this.файлToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(549, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(550, 24);
             this.menuStrip1.TabIndex = 52;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -419,7 +421,7 @@
             // label28
             // 
             this.label28.AutoSize = true;
-            this.label28.Location = new System.Drawing.Point(429, 521);
+            this.label28.Location = new System.Drawing.Point(429, 535);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(105, 13);
             this.label28.TabIndex = 54;
@@ -510,7 +512,7 @@
             "Тетя",
             "Дедушка",
             "Дядя"});
-            this.Rod_2_Pro.Location = new System.Drawing.Point(152, 433);
+            this.Rod_2_Pro.Location = new System.Drawing.Point(146, 434);
             this.Rod_2_Pro.Name = "Rod_2_Pro";
             this.Rod_2_Pro.Size = new System.Drawing.Size(67, 21);
             this.Rod_2_Pro.TabIndex = 67;
@@ -525,7 +527,7 @@
             "Тетя",
             "Дедушка",
             "Дядя"});
-            this.Rod_1_Pro.Location = new System.Drawing.Point(152, 407);
+            this.Rod_1_Pro.Location = new System.Drawing.Point(147, 407);
             this.Rod_1_Pro.Name = "Rod_1_Pro";
             this.Rod_1_Pro.Size = new System.Drawing.Size(67, 21);
             this.Rod_1_Pro.TabIndex = 66;
@@ -578,11 +580,31 @@
             this.label32.TabIndex = 78;
             this.label32.Text = "Адрес прописки";
             // 
+            // label33
+            // 
+            this.label33.AutoSize = true;
+            this.label33.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F);
+            this.label33.Location = new System.Drawing.Point(15, 478);
+            this.label33.Name = "label33";
+            this.label33.Size = new System.Drawing.Size(207, 13);
+            this.label33.TabIndex = 82;
+            this.label33.Text = "Немного информации от автора досье:";
+            // 
+            // info_avt
+            // 
+            this.info_avt.Location = new System.Drawing.Point(228, 475);
+            this.info_avt.Name = "info_avt";
+            this.info_avt.Size = new System.Drawing.Size(306, 20);
+            this.info_avt.TabIndex = 83;
+            this.info_avt.Text = " ";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(549, 548);
+            this.ClientSize = new System.Drawing.Size(550, 571);
+            this.Controls.Add(this.info_avt);
+            this.Controls.Add(this.label33);
             this.Controls.Add(this.label31);
             this.Controls.Add(this.Propiska_);
             this.Controls.Add(this.label32);
@@ -708,6 +730,8 @@
         private System.Windows.Forms.Label label31;
         private System.Windows.Forms.TextBox Propiska_;
         private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.Label label33;
+        private System.Windows.Forms.TextBox info_avt;
     }
 }
 

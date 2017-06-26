@@ -45,6 +45,7 @@ namespace database
                 MyIni.Write("sity_", sity_.Text);
                 MyIni.Write("Propiska_", Propiska_.Text);
                 MyIni.Write("oby_", oby_.Text);
+                MyIni.Write("info_avt", info_avt.Text);
                 MyIni.Write("class_oby_", class_oby_.Text);
                 MyIni.Write("NickName", NickName.Text);
                 MyIni.Write("week_rod_", dateTimePicker1.Text);
@@ -123,6 +124,7 @@ namespace database
                 dateTimePicker1.Text = MyIni.Read("week_rod_");
                 rod_sity_.Text = MyIni.Read("rod_sity_");
                 Rod_1_Pro.Text = MyIni.Read("Rod_1_Pro");
+                info_avt.Text = MyIni.Read("info_avt");
                 Rod_2_Pro.Text = MyIni.Read("Rod_2_Pro");
                 Rod_1.Text = MyIni.Read("Rod_1");
                 Rod_2.Text = MyIni.Read("Rod_2");

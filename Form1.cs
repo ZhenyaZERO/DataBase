@@ -45,6 +45,7 @@ namespace database
             phone_.Text = MyIni.Read("phone_");
             Propiska_.Text = MyIni.Read("Propiska_");
             Operator_.Text = MyIni.Read("Operator_");
+            info_avt.Text = MyIni.Read("info_avt");
             homeadres_.Text = MyIni.Read("homeadres_");
             sity_.Text = MyIni.Read("sity_");
             oby_.Text = MyIni.Read("oby_");
