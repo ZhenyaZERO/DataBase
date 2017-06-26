@@ -43,6 +43,7 @@ namespace database
             lastname_.Text = MyIni.Read("lastname_");
             last_lst_.Text = MyIni.Read("last_lst_");
             phone_.Text = MyIni.Read("phone_");
+            Propiska_.Text = MyIni.Read("Propiska_");
             Operator_.Text = MyIni.Read("Operator_");
             homeadres_.Text = MyIni.Read("homeadres_");
             sity_.Text = MyIni.Read("sity_");

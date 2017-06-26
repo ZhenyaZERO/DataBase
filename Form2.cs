@@ -43,6 +43,7 @@ namespace database
                 MyIni.Write("Operator_", Operator_.Text);
                 MyIni.Write("homeadres_", homeadres_.Text);
                 MyIni.Write("sity_", sity_.Text);
+                MyIni.Write("Propiska_", Propiska_.Text);
                 MyIni.Write("oby_", oby_.Text);
                 MyIni.Write("class_oby_", class_oby_.Text);
                 MyIni.Write("NickName", NickName.Text);
@@ -115,6 +116,7 @@ namespace database
                 Operator_.Text = MyIni.Read("Operator_");
                 homeadres_.Text = MyIni.Read("homeadres_");
                 sity_.Text = MyIni.Read("sity_");
+                Propiska_.Text = MyIni.Read("Propiska_");
                 oby_.Text = MyIni.Read("oby_");
                 NickName.Text = MyIni.Read("NickName");
                 class_oby_.Text = MyIni.Read("class_oby_");
