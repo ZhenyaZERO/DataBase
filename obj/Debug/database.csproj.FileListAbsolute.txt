@@ -18,3 +18,13 @@ E:\dtd\DataBase\obj\Debug\database.Properties.Resources.resources
 E:\dtd\DataBase\obj\Debug\database.csproj.GenerateResource.Cache
 E:\dtd\DataBase\obj\Debug\database.exe
 E:\dtd\DataBase\obj\Debug\database.pdb
+E:\DataBase\bin\Debug\database.exe.config
+E:\DataBase\bin\Debug\database.exe
+E:\DataBase\bin\Debug\database.pdb
+E:\DataBase\obj\Debug\database.csprojResolveAssemblyReference.cache
+E:\DataBase\obj\Debug\database.Form2.resources
+E:\DataBase\obj\Debug\database.Form1.resources
+E:\DataBase\obj\Debug\database.Properties.Resources.resources
+E:\DataBase\obj\Debug\database.csproj.GenerateResource.Cache
+E:\DataBase\obj\Debug\database.exe
+E:\DataBase\obj\Debug\database.pdb
