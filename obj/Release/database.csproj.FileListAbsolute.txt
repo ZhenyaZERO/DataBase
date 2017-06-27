@@ -9,3 +9,13 @@ c:\users\asazs\documents\visual studio 2017\Projects\database\database\obj\Relea
 c:\users\asazs\documents\visual studio 2017\Projects\database\database\obj\Release\database.pdb
 c:\users\asazs\documents\visual studio 2017\Projects\database\database\obj\Release\database.csprojResolveAssemblyReference.cache
 C:\Users\asazs\documents\visual studio 2017\Projects\database\database\obj\Release\database.LicenseActivate.resources
+E:\DataBase\bin\Release\database.exe.config
+E:\DataBase\bin\Release\database.exe
+E:\DataBase\bin\Release\database.pdb
+E:\DataBase\obj\Release\database.csprojResolveAssemblyReference.cache
+E:\DataBase\obj\Release\database.Form2.resources
+E:\DataBase\obj\Release\database.Form1.resources
+E:\DataBase\obj\Release\database.Properties.Resources.resources
+E:\DataBase\obj\Release\database.csproj.GenerateResource.Cache
+E:\DataBase\obj\Release\database.exe
+E:\DataBase\obj\Release\database.pdb
