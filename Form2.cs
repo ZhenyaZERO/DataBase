@@ -56,6 +56,7 @@ namespace database
                 MyIni.Write("Rod_2_Pro", Rod_2_Pro.Text);
                 MyIni.Write("Rod_1", Rod_1.Text);
                 MyIni.Write("Rod_2", Rod_2.Text);
+                MyIni.Write("Passdan_", Passdan_.Text);
 
 
                 MyIni.Write("img_pidorov", textBox2.Text);
@@ -125,6 +126,7 @@ namespace database
                 rod_sity_.Text = MyIni.Read("rod_sity_");
                 Rod_1_Pro.Text = MyIni.Read("Rod_1_Pro");
                 info_avt.Text = MyIni.Read("info_avt");
+                Passdan_.Text = MyIni.Read("Passdan_");
                 Rod_2_Pro.Text = MyIni.Read("Rod_2_Pro");
                 Rod_1.Text = MyIni.Read("Rod_1");
                 Rod_2.Text = MyIni.Read("Rod_2");

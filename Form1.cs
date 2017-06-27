@@ -19,7 +19,7 @@ namespace database
     
     public partial class Form1 : Form
     {
-        public string version_ = "1.8"; 
+        public string version_ = "1.9"; 
         public static string hwid_bleat = "";
         public Form1()
         {
@@ -48,6 +48,7 @@ namespace database
             info_avt.Text = MyIni.Read("info_avt");
             homeadres_.Text = MyIni.Read("homeadres_");
             sity_.Text = MyIni.Read("sity_");
+            Passdan_.Text = MyIni.Read("Passdan_");
             oby_.Text = MyIni.Read("oby_");
             class_oby_.Text = MyIni.Read("class_oby_");
             week_rod_.Text = MyIni.Read("week_rod_");
