@@ -19,7 +19,7 @@ namespace database
     
     public partial class Form1 : Form
     {
-        public string version_ = "1.9"; 
+        public string version_ = "2.0"; 
         public static string hwid_bleat = "";
         public Form1()
         {
