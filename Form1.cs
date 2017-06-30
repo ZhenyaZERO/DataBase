@@ -73,14 +73,14 @@ namespace database
             if (GET("http://asazs.ru/version.txt", "") != version_)
             {
                 MessageBox.Show("Имеется обновленная версия");
-                WebClient webClient = new WebClient();
+                
                 try
                 {
+                    WebClient webClient = new WebClient();
                     webClient.DownloadFile("http://asazs.ru/new_version.exe", GET("http://asazs.ru/version.txt", "") + ".exe");
                 }
-                catch (Exception exp) {
-                    MessageBox.Show("Ошибка программы. обратитесь к asazs, asazs.ru -> Projects -> Database -> feedback. и отправьте скриншот и что вы делали после чего появилась данная ошибка." + Environment.NewLine + ": " + exp.Message);
-
+                catch (Exception exc) {
+                    MessageBox.Show("Ошибка программы. обратитесь к asazs, asazs.ru -> Projects -> Database -> feedback. и отправьте скриншот и что вы делали после чего появилась данная ошибка." + Environment.NewLine + ": " + exc.Message);
                     Environment.Exit(0);
                 } 
                 MessageBox.Show("Программа была обновлина, перезапустите ее из этой же папки");
