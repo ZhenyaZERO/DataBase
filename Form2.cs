@@ -43,8 +43,6 @@ namespace database
                 MyIni.Write("NickName", NickName.Text);
                 MyIni.Write("week_rod_", dateTimePicker1.Text);
                 MyIni.Write("rod_sity_", rod_sity_.Text);
-                //MyIni.Write("Rod_Dos", Rod_Dos.Text);
-                //MyIni.Write("Rod_Names", Rod_Names.Text);
                 MyIni.Write("Rod_1_Pro", Rod_1_Pro.Text);
                 MyIni.Write("Rod_2_Pro", Rod_2_Pro.Text);
                 MyIni.Write("Rod_1", Rod_1.Text);
@@ -63,21 +61,6 @@ namespace database
             
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            
-        }
-
-        private void Form1_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label19_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void Form1_Resize(object sender, EventArgs e)
         {
             this.WindowState = FormWindowState.Normal;
@@ -87,16 +70,6 @@ namespace database
         {
             Form1 Form1ftm = new Form1();
             Form1ftm.Show();
-        }
-
-        private void button4_Click(object sender, EventArgs e)
-        {
-           
-        }
-
-        private void button3_Click_1(object sender, EventArgs e)
-        {
-            
         }
         void Paste1(string filename)
         {
@@ -131,11 +104,7 @@ namespace database
                 Environment.Exit(0);
             }
         }
-
-        private void button5_Click(object sender, EventArgs e)
-        {
-            
-        }
+        
 
         private void сохранитьДосьеToolStripMenuItem_Click(object sender, EventArgs e)
         {

@@ -72,7 +72,6 @@
             this.редактироватьДосьеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
             this.оПрограммеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.проверитьОбновленияПрограммыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.label19 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
             this.NickName = new System.Windows.Forms.TextBox();
@@ -410,8 +409,7 @@
             // menuStrip1
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.файлToolStripMenuItem,
-            this.проверитьОбновленияПрограммыToolStripMenuItem});
+            this.файлToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(1103, 24);
@@ -468,13 +466,6 @@
             this.оПрограммеToolStripMenuItem.Size = new System.Drawing.Size(190, 22);
             this.оПрограммеToolStripMenuItem.Text = "О программе";
             this.оПрограммеToolStripMenuItem.Click += new System.EventHandler(this.оПрограммеToolStripMenuItem_Click);
-            // 
-            // проверитьОбновленияПрограммыToolStripMenuItem
-            // 
-            this.проверитьОбновленияПрограммыToolStripMenuItem.Name = "проверитьОбновленияПрограммыToolStripMenuItem";
-            this.проверитьОбновленияПрограммыToolStripMenuItem.Size = new System.Drawing.Size(218, 20);
-            this.проверитьОбновленияПрограммыToolStripMenuItem.Text = "Проверить обновления программы";
-            this.проверитьОбновленияПрограммыToolStripMenuItem.Click += new System.EventHandler(this.проверитьОбновленияПрограммыToolStripMenuItem_Click);
             // 
             // label19
             // 
@@ -759,7 +750,6 @@
         private System.Windows.Forms.ToolStripMenuItem создатьДосьеToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem открытьДосьеToolStripMenuItem;
         private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.ToolStripMenuItem проверитьОбновленияПрограммыToolStripMenuItem;
         private System.Windows.Forms.Label label27;
         private System.Windows.Forms.TextBox NickName;
         private System.Windows.Forms.Label label28;

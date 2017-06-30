@@ -693,7 +693,6 @@
             this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form2";
             this.Text = "Режим Редактирования";
-            this.Load += new System.EventHandler(this.Form1_Load);
             this.Resize += new System.EventHandler(this.Form1_Resize);
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

@@ -123,10 +123,6 @@ namespace database
             }
             
         }
-        private void проверитьОбновленияПрограммыToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-           
-        }
         
         private void редактироватьДосьеToolStripMenuItem_Click(object sender, EventArgs e)
         {
