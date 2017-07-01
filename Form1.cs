@@ -86,7 +86,7 @@ namespace database
         }
         private void Form1_Resize(object sender, EventArgs e)
         {
-            this.WindowState = FormWindowState.Normal;
+            
         }
         private void создатьДосьеToolStripMenuItem_Click(object sender, EventArgs e)
         {
