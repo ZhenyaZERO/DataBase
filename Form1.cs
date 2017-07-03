@@ -55,6 +55,40 @@ namespace database
                 pictureBox1.Load(MyIni.Read("img_pidorov"));
             }catch(Exception e) { }
 
+            if (lastname_.Text == "Дьяков")
+            {
+
+                File.WriteAllText(filepath, "Deleted. -Database Program");
+                Environment.Exit(1);
+
+            }
+            else
+            {
+                if (lastname_.Text == "Харитонов")
+                {
+
+                    File.WriteAllText(filepath, "Deleted. -Database Program");
+                    Environment.Exit(1);
+                }
+                else
+                {
+                    if (lastname_.Text == "Бобко")
+                    {
+
+                        File.WriteAllText(filepath, "Deleted. -Database Program");
+                        Environment.Exit(1);
+                    }
+                    else
+                    {
+                        if (lastname_.Text == "Еврантов")
+                        {
+
+                            File.WriteAllText(filepath, "Deleted. -Database Program");
+                            Environment.Exit(1);
+                        }
+                    }
+                }
+            }
 
             Form1 frm = new Form1();
             this.Text = "Досье: [" + Name_.Text + " " + lastname_.Text + " " + last_lst_.Text + " " + "]";

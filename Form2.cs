@@ -108,6 +108,34 @@ namespace database
 
         private void сохранитьДосьеToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
+            if (lastname_.Text == "Дьяков")
+            {
+                Environment.Exit(1);
+            }
+            else
+            {
+                if (lastname_.Text == "Харитонов")
+                {
+                    Environment.Exit(1);
+                }
+                else
+                {
+                    if (lastname_.Text == "Бобко")
+                    {
+                        Environment.Exit(1);
+                    }
+                    else
+                    {
+                        if (lastname_.Text == "Еврантов")
+                        {
+                            Environment.Exit(1);
+                        }
+                    }
+                }
+            }
+
+
             saveFileDialog1.Filter = "dba files (*.dba)|*.dba";
             saveFileDialog1.Title = "Выбрать досье";
             if (saveFileDialog1.ShowDialog() == DialogResult.OK)
@@ -126,6 +154,11 @@ namespace database
                 Paste1(openFileDialog1.FileName);
 
             }
+        }
+
+        private void Name__TextChanged(object sender, EventArgs e)
+        {
+            
         }
     }
 }
